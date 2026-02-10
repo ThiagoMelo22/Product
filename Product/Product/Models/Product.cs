@@ -7,6 +7,14 @@ internal class Product
     public string Description { get; }
     public decimal Price { get; private set; }
 
+    public Product(string name, string description, decimal price, string image)
+    {
+        this.Name = name;
+        this.Description = description;
+        this.Price = price;
+        this.Image = image;
+    }
+
     public void ChangePriceWithDiscount(decimal discount)
     {
         Price = Price * (1 - discount / 100);
