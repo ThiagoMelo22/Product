@@ -1,11 +1,12 @@
 ﻿namespace Product.Models;
 
-internal class Product
+abstract class Product
 {
     private string image;
     public string Name { get; }
     public string Description { get; }
     public decimal Price { get; private set; }
+    public DateTime PurchaseDate { get; }
 
     public Product(string name, string description, decimal price, string image)
     {

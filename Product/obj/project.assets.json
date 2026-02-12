@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThiagoMelo\\workspace\\Product\\Product\\Product\\Product.csproj",
+      "projectUniqueName": "C:\\Users\\ThiagoMelo\\workspace\\Product\\Product\\Product.csproj",
       "projectName": "Product",
-      "projectPath": "C:\\Users\\ThiagoMelo\\workspace\\Product\\Product\\Product\\Product.csproj",
+      "projectPath": "C:\\Users\\ThiagoMelo\\workspace\\Product\\Product\\Product.csproj",
       "packagesPath": "C:\\Users\\ThiagoMelo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThiagoMelo\\workspace\\Product\\Product\\Product\\obj\\",
+      "outputPath": "C:\\Users\\ThiagoMelo\\workspace\\Product\\Product\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

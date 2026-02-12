@@ -23,5 +23,9 @@ Console.WriteLine(@$"Dados do item 2:
     Nome: {item2.Name};
     Descrição: {item2.Description};
     Preço: {item2.Price};
-    Link: {item2.LinkDownload}.
+    Link: {item2.LinkDownload};
+    Está expirado: {item2.IsExpired()}
 ");
+
+Order order = new Order(1, "Teste", 100.00m);
+order.ShowResum();

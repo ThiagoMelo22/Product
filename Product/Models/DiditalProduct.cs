@@ -1,6 +1,8 @@
-﻿namespace Product.Models;
+﻿using Product.Interfaces;
 
-internal class DiditalProduct : Product
+namespace Product.Models;
+
+internal class DiditalProduct : Product, IExpired
 {
     private string linkDownload;
     public int Stock { get; }
@@ -28,5 +30,10 @@ internal class DiditalProduct : Product
                 this.linkDownload = value;
             }
         }
+    }
+
+    public bool IsExpired()
+    {
+        return DateTime.Now > PurchaseDate.AddYears(15);
     }
 }
