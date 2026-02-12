@@ -1,6 +1,6 @@
 ﻿namespace Product.Models;
 
-internal class Review
+public class Review
 {
     public int Rating { get; private set; }
     public string Comment { get; private set; }
