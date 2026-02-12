@@ -9,6 +9,7 @@ internal class Order : IExpired
     public string Client { get; }
     public DateTime Date { get; }
     public decimal TotalValue { get; }
+    public Review Review { get; }
 
     public Order(int id, string client, decimal totalValue) 
     {
