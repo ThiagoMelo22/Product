@@ -7,6 +7,7 @@ abstract class Product
     public string Description { get; }
     public decimal Price { get; private set; }
     public DateTime PurchaseDate { get; }
+    public Review Review { get; private set; }
 
     public Product(string name, string description, decimal price, string image)
     {
@@ -34,5 +35,10 @@ abstract class Product
                 this.image = value;
             }
         }
+    }
+
+    public void ProductNote(int rating, string comment) 
+    {
+        Review = new Review(rating, comment);
     }
 }
