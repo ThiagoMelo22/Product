@@ -32,8 +32,8 @@ internal class PhysicalProduct : Product
         Descrição: {physcal.description};
         Preço: {physcal.price};
         Estoque: {physcal.stock};
-        Nota: {physcal.Review.Rating};
-        Comentário: {physcal.Review.Comment}");
+        Nota: {physcal.Review?.Rating};
+        Comentário: {physcal.Review?.Comment}");
     }
 
     public override void Deliver(string address)

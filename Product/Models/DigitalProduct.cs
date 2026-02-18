@@ -2,12 +2,12 @@
 
 namespace Product.Models;
 
-internal class DiditalProduct : Product, IExpired
+internal class DigitalProduct : Product, IExpired
 {
     private string linkDownload;
     private int stock { get; set; }
 
-    public DiditalProduct(string name, string description, decimal price, string image, string linkDownload) : base(name, description, price, image)
+    public DigitalProduct(string name, string description, decimal price, string image, string linkDownload) : base(name, description, price, image)
     {
         this.LinkDownload = linkDownload;
     }
@@ -43,7 +43,7 @@ internal class DiditalProduct : Product, IExpired
         this.stock = stock;
     }
 
-    public void GetDigitalProduct(DiditalProduct digital)
+    public void GetDigitalProduct(DigitalProduct digital)
     {
         Console.WriteLine(@$"Dados do item 1: 
         Nome: {digital.name};
