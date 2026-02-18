@@ -43,7 +43,7 @@ internal class DiditalProduct : Product, IExpired
         this.stock = stock;
     }
 
-    public void ShowDigitalProduct(DiditalProduct digital)
+    public void GetDigitalProduct(DiditalProduct digital)
     {
         Console.WriteLine(@$"Dados do item 1: 
         Nome: {digital.name};
@@ -54,5 +54,10 @@ internal class DiditalProduct : Product, IExpired
         Nota: {digital.Review.Rating};
         Comentário: {digital.Review.Comment};
         Está expirado: {digital.IsExpired()}");
+    }
+
+    public override void Deliver(string address)
+    {
+        Console.WriteLine($"Enviando {name} para o e-mail {address}");
     }
 }

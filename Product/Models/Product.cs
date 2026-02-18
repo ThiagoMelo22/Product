@@ -22,6 +22,11 @@ public class Product
         price = price * (1 - discount / 100);
     }
 
+    public void ChangePriceWithDiscount(int discount)
+    {
+        price = price - discount;
+    }
+
     public string Image
     {
         get
@@ -37,8 +42,13 @@ public class Product
         }
     }
 
-    public void ProductNote(int rating, string comment) 
+    public void ProductNote(int rating, string comment)
     {
         Review = new Review(rating, comment);
+    }
+
+    public virtual void Deliver(string address) 
+    {
+        Console.WriteLine("Entrega genérica.");
     }
 }
